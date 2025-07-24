@@ -3,10 +3,11 @@ This repository contains the implementation of an advanced, agentic Retrieval-Au
 
 ## Situation
 Standard Retrieval-Augmented Generation (RAG) pipelines are powerful but brittle. They often fail silently when faced with common issues:
-- Irrelevant Context: The vector store returns documents that are not relevant to the user's specific query, leading to "garbage-in, garbage-out."
-- LLM Hallucination: The language model generates an answer that is not factually grounded in the provided context.
-- Incomplete Answers: The generated answer is factually correct but fails to address the user's actual question.
-- These failure points make standard RAG unsuitable for production systems where trust and reliability are critical.
+- **Irrelevant Context:** The vector store returns documents that are not relevant to the user's specific query, leading to "garbage-in, garbage-out."
+- **LLM Hallucination:** The language model generates an answer that is not factually grounded in the provided context.
+- **Incomplete Answers:** The generated answer is factually correct but fails to address the user's actual question.
+
+These failure points make standard RAG unsuitable for production systems where trust and reliability are critical.
 
 ## Objectives
 The primary goal of this project was to design and build a more resilient and intelligent RAG agent that could overcome these limitations. The key objectives were to:
@@ -30,4 +31,3 @@ This agentic approach results in a significantly more robust and trustworthy Q&A
 - **Increased Reliability:** The multi-step verification process drastically reduces the likelihood of incorrect or hallucinatory answers.
 - **Enhanced Adaptability:** The agent is not locked into a static knowledge base. Its ability to perform web searches allows it to answer questions about recent events and topics not covered in the initial documents.
 - **Transparent Reasoning:** By using LangSmith tracing, the agent's decision-making process at each step is fully observable, making it easier to debug and trust.
-- **Developer-Ready:** The project is structured as a Jupyter Notebook, allowing for easy experimentation and integration.
