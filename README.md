@@ -1,4 +1,4 @@
-# Self-Correcting-RAG-Agent
+# Self Correcting RAG Agent
 This repository contains the implementation of an advanced, agentic Retrieval-Augmented Generation (RAG) system that moves beyond simple pipelines by incorporating a dynamic, self-correcting workflow to ensure answer reliability and accuracy.
 
 ## Situation
